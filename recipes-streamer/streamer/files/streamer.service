@@ -1,0 +1,11 @@
+[Unit]
+Description=WebSocket Server for Sensor Interface
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/streamer
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
