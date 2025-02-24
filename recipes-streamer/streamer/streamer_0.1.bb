@@ -24,10 +24,11 @@ SRC_URI = "git:///mnt/ssd/work/streamer;branch=main;protocol=file"
 SRC_URI += "file://streamer.service"
 
 #SRCREV = "${AUTOREV}"
-SRCREV = "7d50bede0b0d7c997d41e1bf26711e0f725e52ab"
+SRCREV = "d85d411a794ae50ccb249fb360544dcae5064481"
 
-DEPENDS = "libwebsockets"
-DEPENDS = "cmake"
+PV = "1.0"
+
+DEPENDS = "cmake libwebsockets pkgconfig-native jsoncpp"
 
 S = "${WORKDIR}/git"
 
